@@ -87,3 +87,25 @@ The Zakat Calculation System is a command-line program written in C that helps a
       ```
       followed by the full summary for that run.
   - **Screenshot:** ![Case 4](screenshots/case4_execution.png)
+ 
+  - ## Instructions to Clone and Execute
+
+### Step 1: Clone the Repository
+
+git clone https://github.com/huzaifa13jan-lab/zakat_calculator.git
+
+cd zakat_calculator
+
+### Step 2: Compile the Program
+
+gcc main.c -o project
+
+### Step 3: Run the Program
+
+Windows:
+
+project.exe
+
+Linux/macOS:
+
+./project
