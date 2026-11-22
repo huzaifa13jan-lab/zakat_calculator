@@ -9,7 +9,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <time.h>
 
 #define ZAKAT_RATE        0.025
