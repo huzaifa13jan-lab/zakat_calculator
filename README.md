@@ -50,26 +50,7 @@ The Zakat Calculation System is a command-line program written in C that helps a
     ```
   - **Screenshot:** ![Case 2](screenshots/case2_execution.png)
 
-- **Case 3: Gold Nisab Selection**
-  - **Description:** Tests that choosing option 2 switches the threshold to the Gold Nisab (87.48 g). Using the same assets as Case 1 shows how the choice of Nisab changes the result.
-  - **Inputs:**
-    - Gold price per gram: `20000`
-    - Silver price per gram: `250`
-    - Nisab choice: `2`
-    - Same assets and debts as Case 1
-  - **Expected Output:**
-    ```
-    Nisab value: 1749600.00
-    ...
-    Net zakatable wealth:       850000.00
-    Nisab threshold     :      1749600.00
-    ------------------------------------------
-    Your net wealth is below Nisab.
-    No Zakat is due.
-    ```
-  - **Screenshot:** ![Case 3](screenshots/case3_execution.png)
-
-- **Case 4: Invalid Input & Error Handling**
+- **Case 3: Invalid Input & Error Handling**
   - **Description:** Tests how the program handles unexpected input such as letters, negative numbers, decimals or out-of-range values in the menu. The program rejects the input and asks again instead of crashing or accepting bad data.
   - **Inputs:**
     - Gold price per gram: `abc`, then `-500`, then `20000`
@@ -89,9 +70,9 @@ The Zakat Calculation System is a command-line program written in C that helps a
     Choice (1 or 2): 1
     ```
     The program only continues once a valid value is entered.
-  - **Screenshot:** ![Case 4](screenshots/case4_execution.png)
+  - **Screenshot:** ![Case 3](screenshots/case4_execution.png)
 
-- **Case 5: Saving Records to File**
+- **Case 4: Saving Records to File**
   - **Description:** Tests file handling. After each calculation, the full report is appended with a date and time to `zakat_records.txt`, so records from earlier runs are kept. Running the program twice should leave two records in the file.
   - **Inputs:**
     - Run the program once with the inputs of Case 1, then run it again with the inputs of Case 2.
@@ -105,4 +86,4 @@ The Zakat Calculation System is a command-line program written in C that helps a
       ==========================================
       ```
       followed by the full summary for that run.
-  - **Screenshot:** ![Case 5](screenshots/case5_execution.png)
+  - **Screenshot:** ![Case 4](screenshots/case5_execution.png)
